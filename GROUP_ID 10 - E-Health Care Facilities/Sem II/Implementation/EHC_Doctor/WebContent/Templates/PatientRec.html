@@ -1,0 +1,136 @@
+<script type="text/template" id="patientTemp">
+<div id="temp">
+<br>
+
+
+<div id="patientrec">
+<!--
+<h4><b>Patient Name:</b></h4><input type="text" id="patientName"></h4>
+-->
+<center>
+<h4><b>Patient Username:</b><input type="text" id="patientusername"><b style="margin-left: 10px;">  Patient Password:</b><input type="password" id="patientpassword">
+<button type="button" class="btn btn-primary" id="search"  style="margin-left: 10px;">
+			<span class="glyphicon glyphicon-search"></span> Search</button>
+</h4>
+<div id="warning"><b>Please Enter Valid Details.</b></div>
+</center>
+</div>
+<br>
+<h3><b>Patient Details</b></h3>
+<div >
+  <table id="patient" class="table table-striped table-hover">
+	
+	<thead>
+		<th>Patient Name</th>
+		<th>Date Of Birth</th>
+		<th>Gender</th>
+		<th>Blood Group</th>
+		<th>Address</th>
+		<th>Email Id</th>
+		<th>Contact</th>
+	</thead>
+
+	<tbody>
+	</tbody>
+  </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--<h3><b>Patient Reports</b></h3>
+<div >
+  <table id="reports"class="table table-striped table-hover">
+	
+	<thead>
+		<th>Report Name</th>
+		<th>Date of Test</th>
+		<th>Hospital</th>
+		<th>Doctor</th>
+		<th>Upload Report</th>
+	</thead>
+	<tbody>
+		<tr>
+		<td><input type="text" id="reportname"></td>
+		<td><input type="text" id="dateoftest"></td>
+		<td><input type="text" id="hospitalname"></td>
+		<td><input type="text" id="doctorname"></td>
+		<td><input type="file" id="reportfile"></td>
+		</tr>
+	</tbody>
+  </table>
+<button type="button" class="btn btn-primary" id="addreport">
+			<span class="glyphicon glyphicon-plus"></span> Add Report</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+-->
+<h3><b>Patient Prescriptions</b></h3>
+<div >
+  <table id="prescriptiontab" class="table table-striped table-hover">
+	
+	<thead>
+		<!--<th>Diagnosis</th>-->
+		<th>Medicine Prescribed</th>
+		<th>Dosage</th>
+		<th>Morning</th>
+		<th>Afternoon</th>
+		<th>Evening</th>
+		<th>Duration</th>
+		<!--<th>Hospital</th>
+		<th>Doctor</th>-->
+
+	</thead>
+	<tr>
+		<td><input type = "text" id = "med1" placeholder="Medicine Name"></td>
+		<td><input type = "text" id = "dosage1" placeholder="Dosage"></td>
+		<td><input type = "checkbox" id = "m1" value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "a1"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "e1"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "text" id = "duration1" placeholder="No. of days"></td>	
+	</tr>
+	<tr>
+		<td><input type = "text" id = "med2" placeholder="Medicine Name"></td>
+		<td><input type = "text" id = "dosage2" placeholder="Dosage"></td>
+		<td><input type = "checkbox" id = "m2"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "a2"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "e2"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "text" id = "duration2" placeholder="No. of days"></td>	
+	</tr>
+	<tr>
+		<td><input type = "text" id = "med3" placeholder="Medicine Name"></td>
+		<td><input type = "text" id = "dosage3" placeholder="Dosage"></td>
+		<td><input type = "checkbox" id = "m3"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "a3"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "e3"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "text" id = "duration3" placeholder="No. of days"></td>	
+	</tr>
+	<tr>
+		<td><input type = "text" id = "med4" placeholder="Medicine Name"></td>
+		<td><input type = "text" id = "dosage4" placeholder="Dosage"></td>
+		<td><input type = "checkbox" id = "m4"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "a4"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "e4"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "text" id = "duration4" placeholder="No. of days"></td>	
+	</tr>
+	<tr>
+		<td><input type = "text" id = "med5" placeholder="Medicine Name"></td>
+		<td><input type = "text" id = "dosage5" placeholder="Dosage"></td>
+		<td><input type = "checkbox" id = "m5"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "a5"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "checkbox" id = "e5"  value = "No" onclick="$(this).val(this.checked ? 1 : 0)"></td>
+		<td><input type = "text" id = "duration5" placeholder="No. of days"></td>	
+	</tr>
+	
+
+	<tbody>
+	</tbody>
+  </table>
+<div id = "success"><b>Sucessful</b></div>
+<button type="button" class="btn btn-primary" id="addprescription">
+			<span class="glyphicon glyphicon-plus"></span> Add Prescription</button>
+</div>
+</div>
+</script>

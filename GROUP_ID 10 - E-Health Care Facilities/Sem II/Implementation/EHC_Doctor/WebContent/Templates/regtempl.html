@@ -1,0 +1,91 @@
+<script type="text/template" id="regtemp">
+<center>
+<div id="reg" class="container col-md-4 ">
+  <h2><center>Registration</center></h2><br>
+     
+  <table class="table table-condensed table-striped table-bordered">
+
+
+<tbody>    
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="name" value=""></td>
+       </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" id="address" value="" ></td>
+       </tr>
+	<tr>
+        <td>Mobile No.</td>
+        <td><input type="text" id="mobile" value="" ></td>
+       </tr>
+	<tr>
+        <td >Gender</td>
+        <td><select id = "gender">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				
+				</select></td>
+       </tr>
+	<tr>
+        <td>Date of Birth</td>
+        <td><input type="text" id="dob"	value="" placeholder = "dd/mm/yyyy"></td>
+       </tr>
+
+	<tr>
+        <td>Email-Id</td>
+        <td><input type="text" id="email" value="" ></td>
+       </tr>
+	<tr>
+        <td>Hospital</td>
+        <td><select id = "hospital">
+				<option value="hospital1">Ruby Hall Clinic</option>
+				<option value="hospital2">Aditya Birla Clinic</option>
+				<option value="hospital3">Joshi Cardiac Center</option>
+				<option value="hospital4">Vitalife Clinic</option>
+				<option value="hospital5">Kedar Clinic</option>
+				<option value="hospital6">Prudent Health Clinic</option>
+				<option value="hospital7"></option>
+				<option value="hospital8"></option>
+				<option value="hospital9"></option>
+				</select></td>
+       </tr>
+	<tr>
+        <td>Speciality</td>
+        <td><select id = "speciality">
+				<option value="ENT">ENT</option>
+				<option value="Cardiologist">Cardiologist</option>
+				<option value="General Physician">General Physician</option>
+				<option value="Orthopedic">Ortdopedist</option>
+				<option value="Pediatrician">Pediatrician</option>
+				</select></td>
+       </tr>
+	<tr>
+        <td>Username</td>
+        <td><input type="text" id="username" value="" ></td>
+       </tr>
+
+		<tr>
+        <td>Password</td>
+        <td><input type="password" id="password" value="" ></td>
+       </tr>
+
+	<tr>
+        <td>Confirm Password</td>
+        <td><input type="password" id="password2" value="" ></td>
+       </tr>
+
+    </tbody>
+  </table>
+<center>
+<div id = "success"><b>Sucessful</b></div>
+<button type="button" class="btn btn-primary" id="submitBtn">
+<span class="glyphicon glyphicon-save"> Submit</span></button>
+
+<button type="button" class="btn btn-primary" id="backbtn">
+<span class="glyphicon glyphicon-back"> Back</span></button>
+<div id="warning"><b>Enter Valid details.<b></div>
+</center>
+</div>
+	</center>	
+	</script>
